@@ -204,7 +204,7 @@ module Middleman
           end
 
           # Look in the partials_dir for the partial with the current engine
-          partials_path = File.join(config[:partials_dir], data)
+          partials_path = File.join(partials_dir, data)
           if !found_partial && !engine.nil?
             found_partial, found_engine = resolve_template(partials_path, :preferred_engine => engine, :try_without_underscore => true)
           end

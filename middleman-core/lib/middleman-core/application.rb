@@ -117,7 +117,7 @@ module Middleman
 
     # Location of partials within source. Used by renderers.
     # @return [String]
-    config.define_setting :partials_dir,   "", 'Location of partials within source'
+    set :partials_dir,   ""
 
     # Where to build output files
     # @return [String]
